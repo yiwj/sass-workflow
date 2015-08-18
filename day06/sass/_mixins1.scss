@@ -1,0 +1,37 @@
+
+@mixin box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin rotate{
+	-webkit-rotate: rotate(0deg);
+	-ms-rotate: rotate(0deg);
+	-o-rotate: rotate(0deg);
+	rotate: rotate(0deg);
+}
+@mixin skew{
+	-webkit-skew: skew(0deg);
+	-ms-skew: skew(0deg);
+	-o-skew: skew(0deg);
+	skew: skew(0deg);
+}
+@mixin translate{
+	-webkit-translate: translate(0deg);
+	-ms-translate: translate(0deg);
+	-o-translate: translate(0deg);
+	translate: translate(0deg);
+}
+@mixin rotate{
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+@mixin box-shadow{
+	-webkit-box-shadow: 0 0 0 #000;
+	-moz-box-shadow: 0 0 0 #000;
+	box-shadow: 0 0 0 #000;
+}

@@ -1,0 +1,42 @@
+/* nesting */
+.container { margin-left: auto; margin-right: auto; font-family: 'Nanum Gothic'; font-weight: 100; font-size: 30px; }
+.container header { background: #eaeaea; color: #313131; }
+@media only screen and (min-width: 1200px) { .container header { background: #e9cada; } }
+.container header h1 { font-size: 1.5rem; }
+.container header h1 span { color: #FC414B; }
+.lt-ie8 .container header h1 span { zoom: 1; }
+.container header h1 span::before, .container header h1 span::after { content: ''; background: url("image-path2") #000; }
+.container header h1 span::after { clear: both; }
+.container nav { color: #333; }
+.container main { color: #010101; }
+.container footer { color: #ff0; }
+
+/**------------------------------------------ button ------------------------------------------ */
+.button, .button-login, .button-checkout, .button-warnning { box-sizing: border-box; padding: .3em .8em; background: #34C0ff; text-align: center; color: #efefefe; text-shadow: 0 1px #008dcd; }
+
+.button-login { background: #5a30cf; }
+
+.button-checkout { background: #5a30cf; }
+
+.button-warnning { background: #fc414b; }
+
+/**------------------------------------------ clearfix ------------------------------------------ */
+#gnb ul::before, #gnb ul::after { content: ''; display: table; }
+#gnb ul::after { clear: both; }
+.lt-ie8 #gnb ul, #gnb .lt-ie8 ul { zoom: 1; }
+
+#gnb ul { margin-top: 0; margin-bottom: 0; padding-left: 0; list-style: none; }
+
+#gnb li { float: left; margin-right: 3px; }
+#gnb a { display: block; padding-top: 0.3em; padding-right: 0.6em; padding-bottom: 0.2em; padding-left: 0.8em; }
+
+#gnb::after, #gnb::before { clear: both; display: block; height: 5px; background: url("/public/images/patterns/lip/lip.png") no-repeat; background-size: 100% 100%; }
+
+#gnb::after { background-image: url("/public/images/patterns/lip/reversed-lip.png"); }
+
+#gnb { position: relative; overflow: hidden; }
+#gnb::before, #gnb::after { content: ''; position: absolute; left: 0; right: 0; }
+#gnb::before { top: 0; }
+#gnb::after { bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */

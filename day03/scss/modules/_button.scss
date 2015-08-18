@@ -1,0 +1,24 @@
+/**------------------------------------------
+ * button
+ * ------------------------------------------
+ */
+.button {
+	box-sizing : border-box;
+	padding: .3em .8em;
+	background: #34C0ff;
+	text-align: center;
+	color: #efefefe;
+	text-shadow: 0 1px darken(#34C0ff, 20%);
+}
+.button-login {
+	@extend .button !optional;
+	background: #5a30cf;
+}
+.button-checkout {
+	@extend .button;
+	background: #5a30cf;
+}
+.button-warnning {
+	@extend .button;
+	background: #fc414b;
+}

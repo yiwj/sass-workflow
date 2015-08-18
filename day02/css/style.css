@@ -1,0 +1,20 @@
+/** --------------------------------  -------------------------------- */
+#app { margin: 0.4em; }
+#app header { background: red; }
+#app h1 { color: #2c9da7; margin: 0; }
+#app nav ul { margin-left: auto; margin-right: auto; padding-left: 0; list-style: none; }
+#app nav a { color: #2c9da7; }
+#app nav a::before, #app nav a::after { content: 'pseudo content'; }
+#app nav a:hover, #app nav a:focus { color: #0f02f4; }
+#app nav a:focus { outline: none; }
+
+.cf::before, .cf::after { content: ''; display: table; }
+
+.clearfix::after { content: ''; display: block; clear: both; }
+.lt-ie8 .clearfix { zoom: 1; }
+
+html { font-size: 10px; }
+
+body { font-size: 1.4rem; line-height: 1.5; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/** -------------------------------- 변수 Variables -------------------------------- */
+/**  style.sass -------------------------------- */
+body { margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+#page { padding: 10%; -webkit-box-shadow: 0 0 0 #000; -moz-box-shadow: 0 0 0 #000; box-shadow: 0 0 0 #000; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media screen and (min-width: 640px) { #page { padding: 1.25rem; } }
+@media screen and (min-width: 1240px) { #page { padding: 14px; } }
+
+/*# sourceMappingURL=style.css.map */
