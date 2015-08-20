@@ -1,0 +1,98 @@
+
+/* nesting */
+.container{
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	
+	font: {
+		family:'Nanum Gothic';
+		weight:100;
+		size:3*10px; //calc(3*10px)
+	}
+	header {
+		background: #eaeaea;
+		color: #313131;
+		@media only screen and (min-width: 1200px) {
+			background: #eaeaea - #012010;
+		}
+		h1 {
+			font-size:1.5rem;
+			span {
+				color:#FC414B;
+				.lt-ie8 & {
+					zoom: 1;
+				}
+				&::before,
+				&::after{
+					content:'';
+					background:url('image-path2') #000;
+				}
+				&::after{
+					clear:both;
+				}
+			}
+		}
+	}
+	nav {color: #333;}
+	main {color: #010101;}
+	footer {color: #ff0;}
+}
+@import "modules/button";
+@import "modules/clearfix";
+@import "modules/reset";
+
+#gnb {
+	@extend %valley;
+	ul {
+		@extend %list-reset;
+		@extend %cf;
+	}
+	li {
+		float: left;
+		margin-right: 3px;
+	}
+	a {
+		display: block;
+		padding: {
+			top: 0.3em;
+			right: 0.6em;
+			bottom: 0.2em;
+			left: 0.8em;
+		}
+	}
+}
+
+
+%lip {
+    clear: both;
+    display: block;
+    height: 5px;
+    background: url('/public/images/patterns/lip/lip.png') no-repeat;
+    background-size: 100% 100%;
+}
+%reversed-lip {
+    @extend %lip;
+    background-image: url('/public/images/patterns/lip/reversed-lip.png');
+}
+%valley {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    &::before {
+        @extend %lip;
+        top: 0;
+    }
+    &::after {
+        @extend %reversed-lip;
+        bottom: 0;
+    }
+}
