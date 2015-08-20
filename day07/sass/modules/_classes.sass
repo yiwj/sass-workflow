@@ -1,0 +1,56 @@
+//
+ * --------------------------------
+ * 모듈 클래스(플레이스홀더 클래스)
+ * --------------------------------
+%align-center
+	margin:
+		left: auto
+		right: auto
+
+%align-right
+	margin:
+		left: auto
+
+%reset-link
+	text-decoration: none
+	&:focus
+		outline: none
+
+%reset-list
+	margin:
+		top: 0
+		bottom: 0
+	padding-left: 0
+	list-style: none
+
+%reset-table
+	border-collapse: collapse
+	border-spacing: 0
+
+%inline-list
+	display: inline-blockfl
+
+%fl
+	float: left
+%fr
+	float: right
+
+%cf 
+	&::after 
+		content: ''
+		display: block
+		clear: both
+	.lt-ie8 &
+		zoom: 1
+
+
+
+%setting-navigation
+	ul
+		@extend %reset-list
+
+	li
+		@extend %fl
+
+	a
+		@extend %reset-link
