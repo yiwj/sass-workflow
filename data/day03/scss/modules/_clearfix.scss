@@ -1,0 +1,26 @@
+/**------------------------------------------
+ * clearfix
+ * ------------------------------------------
+ */
+%clearfix {
+	::after {
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.lt-ie8 & { zoom:1; }
+}
+
+%cf {
+	&::before,
+	&::after {
+		content:'';
+		display:table;
+	}
+	&::after {
+		clear:both;
+	}
+	.lt-ie8 & {
+		zoom:1;
+	}
+}
