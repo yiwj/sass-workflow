@@ -1,0 +1,70 @@
+//
+ * --------------------------------
+ * 믹스인
+ *
+ * Scss
+ * @mixin 믹스인_이름(전달인자) { 정의 코드 }
+ * @include 믹스인_이름()
+ *
+ * Sass
+ * =믹스인_이름(전달인자)
+ * +믹스인_이름()
+ * --------------------------------
+// Grid-System
+=baseline($line-height: 21px)
+	min-height: 100vh
+
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 100%
+		min-height: inherit
+		top: 0
+		left: 0
+		background: linear-gradient(transparent 96%, #333)
+		background-size: $line-height $line-height
+
+// Demension
+=wrapper($width: auto)
+	max-width: $width
+	// margin:
+	// 	left: auto
+	// 	right: auto
+	@extend %align-center
+
+
+=container($width: auto, $left:auto, $right: $left)
+	max-width: $width
+	margin:
+		left: $left
+		right: $right
+=position($method: absolute, $top: null, $left: null, $bottom: null, $right: null)
+	position: $method
+	top: $top
+	left: $left
+	bottom: $bottom
+	right: $right
+
+=size($width: null, $height: null)
+	width: $width
+	height: $height
+
+=inlineBlock()
+	@extend %inline-list
+
+// CSS3 Categries
+=box-sizing($size: border-box)
+	-webkit-box-sizing: $size
+	-moz-box-sizing: $size
+	box-sizing: $size
+
+=navigation($gap: 10px)
+	@extend %setting-navigation
+	li
+		margin-right: $gap
+
+
+=reset-html5-block
+	#{$html5-block}
+		display: block
