@@ -13,65 +13,69 @@
  * --------------------------------
 @import url('http://fonts.googleapis.com/css?family=#{$webfont}')
 
+//
+ * --------------------------------
+ * CSS3 BG Pattern
+ * --------------------------------
+@import modules/_css3_patterns
+
 /**
  * 문서 기본형
  * --------------------------------
  */
+
 +reset-html5-block
+
 body
 	margin: 0
-	font: $base+px/1.5 $noto
-	color: $text-color
+	font:   $base+px/1.5 $noto-sans
+	color:  $text-color
 
-	+baseline(24px)
-
+	+bg-pattern-seigaiha
+	+baseline(21px, $color: #AFA484)
 
 a
+	+hover-link(2px, 1px solid)
 	color: $link-color
 	&:hover,
 	&:focus
 		color: $link-hover-color
 
+table
+	@extend %reset-table
+	th, td
+		@extend %reset-table-cell
+
+
+/**
+ * --------------------------------
+ * #page
+ * --------------------------------
+ */
+
++selection
+
 #page
-	// 가운데 정렬하는 모듈 확장(상속)
-	@extend %align-center
-	// width: 80%
-	// min-width: 960px
-	// max-width: 1340px
-	
 	+container(960px)
-	margin-top: 45px
+
+	.banner
+		+position($top: 10px, $left: 40px, $z-index: 100)
 
 	h1
-		color: #f00
+		+position(relative, $top: 48px)
 		+size($height: 40px)
+		+letter-spacing(-20)
+		+margin(0, $bottom: 0)
+		font: 100 54+px/1 $monoton
+		color: #b19d6f
 
-	.box
-		// 믹스인 호출
-		// Scss
-		// @include size;
-		+size(1000px)
+	a
+		+hover-link(2px, 1px dashed)
 
-
-	table
-		@extend %reset-table
-
-	header
-		+wrapper
-
-	footer
-		+wrapper(800px)
-
-	nav
-		+navigation(0.8em)
-	#gnb
-		+navigation(1.2px)
-	#lnb, #utils-menu
-		+navigation(20px)
-		// ul
-		// 	@extend %reset-list
-		// a
-		// 	@extend %reset-link
-
-		// li
-		// 	+inlineBlock
+	p
+		+position($top: 96px)
+		+size(700px)
+		+margin(24px, $bottom: 24px)
+		font-size: 12px
+		line-height: 2
+		color: #666

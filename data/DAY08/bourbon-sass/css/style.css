@@ -1,0 +1,22 @@
+#app {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  height: 100vh;
+  width: 90%;
+}
+
+#triangle {
+  height: 0;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid gray;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+@import libs/yiwj/yiwj
+
+=border-radius ($radius: 40px)
+	-webit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
+
+=background-origin($origin: padding-box)
+	-webit-background-origin: $origin
+	-moz-background-origin: $origin
+	background-origin: $origin
+
+=background-clip($content: padding-box)
+	-webit-background-clip: $content
+	-moz-background-clip: $content
+	background-clip: $content
+
+=circle($diameter: 10px, $bgcolor: black)
+	width: $diameter
+	height: $diameter
+	background: $bgcolor
+	@include border-radius($diameter/2)
+	@include background-clip
+
+=triangle ($base: 20px, $bgcolor: blue, $direction: top)
+	width: 0
+	height: 0
+	$half-base: $base/2
+
+	@if $direction == top
+		border:
+			left: $half-base solid transparent
+			right: $half-base solid transparent
+			bottom: $half-base solid $bgcolor
+
+	@if $direction == top
+		border:
+			left: $half-base solid transparent
+			right: $half-base solid transparent
+			bottom: $half-base solid $bgcolor
+	@if $direction == right
+		border:
+			top: $half-base solid transparent
+			bottom: $half-base solid transparent
+			left: $half-base solid $bgcolor
+
+	@if $direction == left
+		border:
+			top: $half-base solid transparent
+			bottom: $half-base solid transparent
+			right: $half-base solid $bgcolor
+
+
