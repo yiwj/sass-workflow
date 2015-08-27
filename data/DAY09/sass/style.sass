@@ -85,8 +85,27 @@ $column-width: (($page-width - ($gutter*2)) - ($gutter*2) * ($total-columns - 1)
 		left: $gutter
 		right: $gutter
 
+
+
+
 // Sass 반복 구문 처리
 @while $i <= $total-columns
+
+	%col-#{$i}
+		@extend %col
+		width: $column-width * $i + ( ($gutter*2) * ($i - 1) )
+
+	%push-#{$i}
+		@extend %pos-r
+		left: $column-width * $i + (($gutter*2) * $i)
+
+	%pull-#{$i}
+		@extend %pos-r
+		left: -1 * ($column-width * $i + (($gutter*2) * $i))
+
+	$i: $i + 1
+
+@for $i <= $total-columns
 
 	%col-#{$i}
 		@extend %col

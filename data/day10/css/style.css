@@ -16,6 +16,36 @@
   height: 45px;
 }
 
+.amoeba-icon-next-frame {
+  background-image: url("images/icons/next-frame.png");
+  width: 12px;
+  height: 14px;
+}
+
+.amoeba-icon-prev-frame {
+  background-image: url("images/icons/prev-frame.png");
+  width: 14px;
+  height: 20px;
+}
+
+.amoeba-icon-auto-play {
+  background-image: url("images/icons/auto-play.png");
+  width: 15px;
+  height: 19px;
+}
+
+.amoeba-icon-show-me-the-money {
+  background-image: url("images/icons/show-me-the-money.png");
+  width: 32px;
+  height: 32px;
+}
+
+.amoeba-icon-black-sheep-wall {
+  background-image: url("images/icons/black-sheep-wall.png");
+  width: 132px;
+  height: 132px;
+}
+
 body {
   line-height: 1;
 }
@@ -201,4 +231,4 @@ nav ul, nav ol, [role=navigation] ul, [role=navigation] ol {
   list-style: none;
 }
 
-/*# sourceMappingURL=styl.css.map */
+/*# sourceMappingURL=style.css.map */
