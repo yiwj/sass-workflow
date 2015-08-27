@@ -1,4 +1,21 @@
-/* line 12, ../sass/styl.sass */
+.amoeba-icon-play {
+  background-image: url("images/icons/play.png");
+  width: 22px;
+  height: 32px;
+}
+
+.amoeba-icon-pause {
+  background-image: url("images/icons/pause.png");
+  width: 32px;
+  height: 12px;
+}
+
+.amoeba-icon-stop {
+  background-image: url("images/icons/stop.png");
+  width: 100px;
+  height: 45px;
+}
+
 body {
   line-height: 1;
 }
@@ -151,39 +168,32 @@ body {
     opacity: 1;
   }
 }
-/* line 39, ../sass/styl.sass */
 #page {
   -moz-animation: bounce-top-bottom 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
   -webkit-animation: bounce-top-bottom 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
   animation: bounce-top-bottom 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
 }
-/* line 43, ../sass/styl.sass */
 #page table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 45, ../sass/styl.sass */
 #page table th, #page table td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
-/* line 48, ../sass/styl.sass */
 #page .circle {
   border-radius: 50%;
   background-clip: padding-box;
 }
-/* line 51, ../sass/styl.sass */
 #page q, #page blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 #page q:before, #page q:after, #page blockquote:before, #page blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 55, ../sass/styl.sass */
 nav ul, nav ol, [role=navigation] ul, [role=navigation] ol {
   margin: 0;
   padding: 0;

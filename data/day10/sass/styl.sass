@@ -7,6 +7,26 @@
 @import compass/css3/opacity
 @import css3
 
+$cop-prefix: amoeba
+$icon-list: play, stop, pause, next-frame, prev-frame, auto-play
+
+// @debug type-of($icon-list)
+
+// @each $icon-name in $icon-list
+// 	.#{$cop-prefix}-icon-#{$icon-name}
+// 		background-image: url("images/icons/#{$icon-name}.png")
+
+$icon-map: (play: 22px 32px, pause: 32px 12px, stop: 100px 45px )
+
+@each $name, $dimension in $icon-map
+	// $name: nth($icon-name, 1)
+	$width: nth($dimension, 1)
+	$height: nth($dimension, 2)
+	.#{$cop-prefix}-icon-#{$name}
+		background-image: url("images/icons/#{$name}.png")
+		width: $width
+		height: $height
+
 // +global-reset
 
 body
