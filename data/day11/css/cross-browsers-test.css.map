@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAmDC,0EAAkB;EACjB,WAAW,EAAE,EAAE;EACf,SAAS,EAAE,QAAS;EACpB,UAAU,EAAE,+CAAmB;EAC/B,KAAK,EAAE,IAAuB;EAC9B,MAAM,EAAE,IAAwB;;;AAsClC,SAAS;EACR,UAAU,EAAE,u4LAA8C",
+"sources": ["../sass/cross-browsers-test.scss"],
+"names": [],
+"file": "cross-browsers-test.css"
+}
