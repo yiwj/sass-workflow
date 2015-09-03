@@ -1,282 +1,33 @@
-.one-sprite, .one-bg-shadow-01, .one-bg-shadow-02, .one-bg-shadow-03, .one-footer-newsletter-gfx, .one-footer-newsletter-store-locator-divider, .one-footer-store-locator-gfx, .one-icon-arrow-select-bottom, .one-icon-arrow-select-right, .one-icon-asc-arrow, .one-icon-bag, .one-icon-ball, .one-icon-btn-close-active, .one-icon-btn-close-bg-white, .one-icon-btn-close-deactive, .one-icon-btn-details, .one-icon-btn-down-arrow, .one-icon-btn-drag, .one-icon-btn-event, .one-icon-btn-price-high, .one-icon-btn-price-low, .one-icon-bus, .one-icon-cart-bag, .one-icon-cart-empty, .one-icon-cart-full, .one-icon-cash, .one-icon-check, .one-icon-coupon, .one-icon-cs-center, .one-icon-event-notice, .one-icon-event-red, .one-icon-faq-answer, .one-icon-faq-question, .one-icon-faq, .one-icon-flag-korea, .one-icon-flag-rus, .one-icon-global, .one-icon-ipin-join, .one-icon-lock-active, .one-icon-lock-deactive, .one-icon-main-play, .one-icon-map, .one-icon-new-black, .one-icon-nocheck-join, .one-icon-phone-join, .one-icon-phone, .one-icon-puma-animal, .one-icon-puma-black, .one-icon-puma-gold, .one-icon-puma-logo, .one-icon-puma-platinum, .one-icon-puma-red, .one-icon-puma-silver, .one-icon-search, .one-icon-shoes, .one-icon-sidebar-active, .one-icon-slidebar-deactive, .one-icon-slider-nav-left, .one-icon-slider-nav-right, .one-icon-social-blog, .one-icon-social-facebook, .one-icon-social-kakaostory, .one-icon-social-youtube, .one-icon-success-check, .one-icon-swimsuit, .one-icon-train, .one-icon-wish02, .one-slider-nav-button-deselected, .one-slider-nav-button-selected {
-  background-image: url('../images/one-sab71c6c444.png');
-  background-repeat: no-repeat;
-}
-
-.one-bg-shadow-01 {
-  background-position: 0 -144px;
-}
-
-.one-bg-shadow-02 {
-  background-position: 0 -256px;
-}
-
-.one-bg-shadow-03 {
-  background-position: 0 -316px;
-}
-
-.one-footer-newsletter-gfx {
-  background-position: -569px -498px;
-}
-
-.one-footer-newsletter-store-locator-divider {
-  background-position: -435px 0;
-}
-
-.one-footer-store-locator-gfx {
-  background-position: -368px -498px;
-}
-
-.one-icon-arrow-select-bottom {
-  background-position: 0 -174px;
-}
-
-.one-icon-arrow-select-right {
-  background-position: -8px -174px;
-}
-
-.one-icon-asc-arrow {
-  background-position: -16px -174px;
-}
-
-.one-icon-bag {
-  background-position: -664px 0;
-}
-
-.one-icon-ball {
-  background-position: -618px 0;
-}
-
-.one-icon-btn-close-active {
-  background-position: 0 0;
-}
-
-.one-icon-btn-close-bg-white {
-  background-position: -81px -174px;
-}
-
-.one-icon-btn-close-deactive {
-  background-position: -400px -174px;
-}
-
-.one-icon-btn-details {
-  background-position: -30px 0;
-}
-
-.one-icon-btn-down-arrow {
-  background-position: -425px -174px;
-}
-
-.one-icon-btn-drag {
-  background-position: -804px 0;
-}
-
-.one-icon-btn-event {
-  background-position: 0 -498px;
-}
-
-.one-icon-btn-price-high {
-  background-position: -324px -174px;
-}
-
-.one-icon-btn-price-low {
-  background-position: -344px -174px;
-}
-
-.one-icon-bus {
-  background-position: -698px -174px;
-}
-
-.one-icon-cart-bag {
-  background-position: -574px -174px;
-}
-
-.one-icon-cart-empty {
-  background-position: -357px 0;
-}
-
-.one-icon-cart-full {
-  background-position: -384px 0;
-}
-
-.one-icon-cash {
-  background-position: -130px -174px;
-}
-
-.one-icon-check {
-  background-position: -630px -174px;
-}
-
-.one-icon-coupon {
-  background-position: -51px -174px;
-}
-
-.one-icon-cs-center {
-  background-position: -172px 0;
-}
-
-.one-icon-event-notice {
-  background-position: -140px 0;
-}
-
-.one-icon-event-red {
-  background-position: -234px -174px;
-}
-
-.one-icon-faq-answer {
-  background-position: -113px -174px;
-}
-
-.one-icon-faq-question {
-  background-position: -96px -174px;
-}
-
-.one-icon-faq {
-  background-position: -451px -174px;
-}
-
-.one-icon-flag-korea {
-  background-position: -146px -174px;
-}
-
-.one-icon-flag-rus {
-  background-position: -23px -174px;
-}
-
-.one-icon-global {
-  background-position: -364px -174px;
-}
-
-.one-icon-ipin-join {
-  background-position: -678px -376px;
-}
-
-.one-icon-lock-active {
-  background-position: 0 -700px;
-}
-
-.one-icon-lock-deactive {
-  background-position: -682px -498px;
-}
-
-.one-icon-main-play {
-  background-position: -513px -174px;
-}
-
-.one-icon-map {
-  background-position: -235px -498px;
-}
-
-.one-icon-new-black {
-  background-position: -279px -174px;
-}
-
-.one-icon-nocheck-join {
-  background-position: -556px -376px;
-}
-
-.one-icon-phone-join {
-  background-position: -434px -376px;
-}
-
-.one-icon-phone {
-  background-position: -710px 0;
-}
-
-.one-icon-puma-animal {
-  background-position: -347px -376px;
-}
-
-.one-icon-puma-black {
-  background-position: -753px 0;
-}
-
-.one-icon-puma-gold {
-  background-position: -51px -376px;
-}
-
-.one-icon-puma-logo {
-  background-position: -153px -376px;
-}
-
-.one-icon-puma-platinum {
-  background-position: 0 -376px;
-}
-
-.one-icon-puma-red {
-  background-position: -846px 0;
-}
-
-.one-icon-puma-silver {
-  background-position: -102px -376px;
-}
-
-.one-icon-search {
-  background-position: -39px -174px;
-}
-
-.one-icon-shoes {
-  background-position: -526px 0;
-}
-
-.one-icon-sidebar-active {
-  background-position: -436px 0;
-}
-
-.one-icon-slidebar-deactive {
-  background-position: -411px 0;
-}
-
-.one-icon-slider-nav-left {
-  background-position: -460px 0;
-}
-
-.one-icon-slider-nav-right {
-  background-position: -493px 0;
-}
-
-.one-icon-social-blog {
-  background-position: -242px 0;
-}
-
-.one-icon-social-facebook {
-  background-position: -319px 0;
-}
-
-.one-icon-social-kakaostory {
-  background-position: -203px 0;
-}
-
-.one-icon-social-youtube {
-  background-position: -281px 0;
-}
-
-.one-icon-success-check {
-  background-position: -162px -174px;
-}
-
-.one-icon-swimsuit {
-  background-position: -572px 0;
-}
-
-.one-icon-train {
-  background-position: -780px -174px;
-}
-
-.one-icon-wish02 {
-  background-position: -177px -174px;
-}
-
-.one-slider-nav-button-deselected {
-  background-position: -198px -174px;
-}
-
-.one-slider-nav-button-selected {
-  background-position: -216px -174px;
+@import url(sprites/sprites.css);
+.ir {
+  overflow: hidden;
+  text-indent: -9999em;
 }
 
 body {
   margin: 0;
+}
+
+#page {
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+}
+#page .icon-bag {
+  position: absolute;
+  top: 10px;
+  left: 500px;
+}
+#page .icon-ball {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+#page .icon-bus {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
