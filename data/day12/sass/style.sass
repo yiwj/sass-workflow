@@ -8,25 +8,63 @@
 // bourbon 믹스인 테스트
 body
 	+margin(0)
-	// +size(null 100vh)
-
+	min-height: 100vh
 
 #page
-	+size(800px 100vh)
-	+margin(0 auto)
+	+container(90%)
+	// +padding(1em)
 
-	header h1
-		@extend %ir
+	+susy-breakpoint(600px, 4)
+		+container(80%)
 
-	#bag
-		@extend %ir
-		@extend %icon-bag
-		+position(absolute, 10px null null 500px)
-	#ball
-		@extend %ir
-		@extend %icon-ball
-		+position(fixed, 10px 10px null null)
-	#bus
-		@extend %ir
-		@extend %icon-bus
-		+position(absolute, null 100px 100px)
+	*
+		box-siznig: border-box
+
+	> *
+		border-bottom: 1px solid #F9828B
+
+	img
+		width: auto
+		height: auto
+		max-width: 100%
+
+	main
+		height: 800px
+
+	aside
+		// +span(1 of 2)
+		height: 300px
+		background: $puma-main-color
+		+susy-breakpoint(600px, 4)
+			+span(3 of 4)
+
+	footer
+		// +span(1 of 2 last)
+		height: 300px
+		background: darken($puma-main-color	, 30%)
+		+susy-breakpoint(600px, 4)
+			+span(1 of 4 last)
+
+
+#page-header
+	height: 200px
+	h1
+		a
+			display: block
+			@extend %ir
+			@extend %icon-puma-logo
+
+#gnb
+	@extend %navigation
+
+	background: $puma-main-color
+
+	ul
+		+padding(30px null)
+
+	li
+		margin-right: .4em
+		a
+			&:hover,
+			&:focus
+				color: lighten($puma-main-color, 40%)
