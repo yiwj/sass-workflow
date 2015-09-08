@@ -1,37 +1,26 @@
 @import config/config
 
+//
+ * --------------------------------
+ * 문서 스타일링
+ * --------------------------------
 body
 	margin: 0
-	+font-size(14px)
 
 #page
 	+container()
 	min-height: 100vh
 
-	img
-		@extend %hidden
 
-// #app
-// 	+fixed(left 50% top 50%)
-// 	+px-rem(margin, 21px 0)	
+//
+ * --------------------------------
+ * RWD Settings
+ * --------------------------------
+img
+	+rwd-image(670px)
 
-// 	.header
-// 		+px-rem(margin-bottom, 32px)
-// 		+color(#b64926, 0.8)
-// 		+bg-color(lighten(#B64926, 40%), 0.8)
-// 		+opacity(0.6)
+iframe
+	border: 0
 
-// 		&:hover
-// 			+opacity(1)
-
-// 		h1.brand
-// 			+retina-image('image/food/food-1-crop.jpg', 480px 343px, 4)
-
-			// background: image-url('food/food-1-crop.jpg')
-			// +hidpi(2)
-			// 	background-image: url(food-1-crop@2x.jpg)
-			// 	background-size: 480px 343px
-			// +hidpi(3)
-			// 	background-image: url(food-1-crop@3x.jpg)
-			// +hidpi(4)
-			// 	background-image: url(food-1-crop@4x.jpg)
+.rwd-video
+	+rwd-video(false)

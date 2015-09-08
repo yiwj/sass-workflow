@@ -1,13 +1,13 @@
 // Susy Global Settings
 $susy: (
-	columns: 3,
+	container: 1200px,
+	columns: 12,
+	column-width: 80px,
+	gutters: 20px/80px,
+	gutter-position: split,
+	math: static,
 	debug: (
-		image: show-baseline,
-		color: rgba(#C94F4F, 0.3)
+		image: show,
+		color: rgba(#50B6D1, 0.3)
 	)
 );
-
-// #page {
-// 	@include container();
-// 	min-height: 100vh;
-// }
