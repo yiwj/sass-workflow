@@ -1,0 +1,13 @@
+// Susy Global Settings
+$susy: (
+	columns: 3,
+	debug: (
+		image: show-baseline,
+		color: rgba(#C94F4F, 0.3)
+	)
+);
+
+// #page {
+// 	@include container();
+// 	min-height: 100vh;
+// }
